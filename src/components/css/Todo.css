@@ -1,0 +1,150 @@
+.logo {
+  width: 100px;
+  height: 100px;
+  background-color: #aac9ab;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.todo-container {
+  max-width: 500px;
+  margin: 10px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  overflow: hidden;
+  padding: 0;
+}
+
+.input-container {
+  padding: 20px;
+  background-color: #4CAF50;
+  color: white;
+  border-bottom: 2px solid #388E3C;
+}
+
+.input-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.todo-input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  color: black;
+}
+
+.todo-button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #388E3C;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.todo-button:hover {
+  background-color: #2E7D32;
+}
+
+.todo-list-container {
+  max-height: 500px;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.todo-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: #fff;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.todo-text {
+  flex: 1;
+  margin-left: 10px;
+}
+
+.todo-actions button {
+  margin-left: 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.editbtn {
+  background-color: #2196F3;
+  color: white;
+}
+
+.deletebtn {
+  background-color: #F44336;
+  color: white;
+}
+
+.editbtn:hover {
+  background-color: #1976D2;
+}
+
+.deletebtn:hover {
+  background-color: #D32F2F;
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .todo-container {
+    width: 90%; /* Take up 90% of the width on small screens */
+    margin-left: 5%; /* Center it with some margin */
+    margin-right: 5%;
+  }
+
+  .input-form {
+    flex-direction: column; /* Stack input and button vertically */
+  }
+
+  .todo-input {
+    margin-right: 0; /* Remove right margin */
+    margin-bottom: 10px; /* Add bottom margin */
+  }
+
+  .todo-button {
+    width: 100%; /* Make button full width */
+  }
+
+  .logo {
+    width: 80px; /* Reduce logo size */
+    height: 80px;
+    font-size: 30px; /* Reduce font size for initials */
+  }
+
+  .todo-item {
+    padding: 8px; /* Reduce padding for smaller screens */
+  }
+
+  .todo-actions button {
+    padding: 4px 8px; /* Smaller buttons */
+  }
+}
+
